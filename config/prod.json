@@ -1,0 +1,9 @@
+{
+  "logger": {
+    "name": "cap-alerts",
+    "level": "info"
+  },
+  "service": {
+    "uri": ""
+  }
+}
