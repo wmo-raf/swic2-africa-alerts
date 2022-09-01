@@ -2,10 +2,14 @@ import axios from "axios";
 import moment from "moment";
 import GeoJSONPolyline from "geojson-polyline";
 import geojsonhint from "@mapbox/geojsonhint";
+import booleanIntersects from "@turf/boolean-intersects";
+
+import africaGeojson from "./africa.js";
+import alertSources from "./cap-sources.js";
 
 const { all, spread, get } = axios;
 
-const COUNTRIES_LIST = ["southAfrica", "algeria"];
+const COUNTRIES_LIST = ["southAfrica", "algeria", "others"];
 
 function pad2(n) {
   return n < 10 ? "0" + n : n;
@@ -222,7 +226,7 @@ const getData = (jsonName, utc) => {
       }
 
       if (!show) {
-        return null;
+        continue;
       }
 
       const datetime1 = moment(utc).format("YYYY-MM-DD HH:mm:ss");
@@ -289,6 +293,8 @@ const getData = (jsonName, utc) => {
               piece.push(jsonName);
               piece.push(data[i].rLink ? data[i].rLink : "");
               piece.push(linkType);
+              piece.push(sourceId);
+
               poly_container.push(piece);
             }
           }
@@ -328,6 +334,7 @@ const getData = (jsonName, utc) => {
                 piece.push(jsonName);
                 piece.push(data[i].rLink ? data[i].rLink : "");
                 piece.push(linkType);
+                piece.push(sourceId);
                 geocode_container.push(piece);
               } catch (err) {
                 console.log("CAP link: " + dataLink);
@@ -369,6 +376,7 @@ const getData = (jsonName, utc) => {
             piece.push(jsonName);
             piece.push(data[i].rLink ? data[i].rLink : "");
             piece.push(linkType);
+            piece.push(sourceId);
             geojson_container.push(piece);
           });
         }
@@ -403,6 +411,7 @@ const getData = (jsonName, utc) => {
           piece.push(jsonName);
           piece.push(data[i].rLink ? data[i].rLink : "");
           piece.push(linkType);
+          piece.push(sourceId);
           circle_container.push(piece);
         }
 
@@ -436,6 +445,8 @@ const getData = (jsonName, utc) => {
           piece.push(jsonName);
           piece.push(data[i].rLink ? data[i].rLink : "");
           piece.push(linkType);
+          piece.push(sourceId);
+
           marker_container.push(piece);
         }
       }
@@ -502,6 +513,7 @@ const getData = (jsonName, utc) => {
         tmp.push(poly_container[a][10]); //jsonName
         tmp.push(poly_container[a][11]); //rLink
         tmp.push(poly_container[a][12]); //linkType
+        tmp.push(poly_container[a][13]); //sourceId
         tank.push(tmp);
 
         const each = [];
@@ -556,6 +568,8 @@ const getData = (jsonName, utc) => {
             jsonName: outter[p][0][ret[4]][9],
             rLink: outter[p][0][ret[4]][10],
             linkType: outter[p][0][ret[4]][11],
+            sourceId: outter[p][0][ret[4]][12],
+            utc: utc,
           },
         };
 
@@ -633,6 +647,7 @@ const getData = (jsonName, utc) => {
         tmp.push(geocode_container[a][10]); //jsonName
         tmp.push(geocode_container[a][11]); //rLink
         tmp.push(geocode_container[a][12]); //linkType
+        tmp.push(geocode_container[a][13]); //sourceId
         tank.push(tmp);
 
         const each = [];
@@ -671,6 +686,8 @@ const getData = (jsonName, utc) => {
             jsonName: outter[p][0][ret[4]][9],
             rLink: outter[p][0][ret[4]][10],
             linkType: outter[p][0][ret[4]][11],
+            sourceId: outter[p][0][ret[4]][12],
+            utc: utc,
           },
         };
 
@@ -744,6 +761,7 @@ const getData = (jsonName, utc) => {
         tmp.push(geojson_container[a][10]); //jsonName
         tmp.push(geojson_container[a][11]); //rLink
         tmp.push(geojson_container[a][12]); //linkType
+        tmp.push(geojson_container[a][13]); //sourceId
         tank.push(tmp);
 
         const each = [];
@@ -777,6 +795,8 @@ const getData = (jsonName, utc) => {
             jsonName: outter[p][0][ret[4]][9],
             rLink: outter[p][0][ret[4]][10],
             linkType: outter[p][0][ret[4]][11],
+            sourceId: outter[p][0][ret[4]][12],
+            utc: utc,
           },
         };
 
@@ -830,6 +850,7 @@ const getData = (jsonName, utc) => {
         tmp.push(circle_container[a][10]); //jsonName
         tmp.push(circle_container[a][11]); //rLink
         tmp.push(circle_container[a][12]); //linkType
+        tmp.push(circle_container[a][13]); //sourceId
         tank.push(tmp);
 
         const each = [];
@@ -867,6 +888,8 @@ const getData = (jsonName, utc) => {
             jsonName: outter[p][0][ret[4]][9],
             rLink: outter[p][0][ret[4]][10],
             linkType: outter[p][0][ret[4]][11],
+            sourceId: outter[p][0][ret[4]][12],
+            utc: utc,
           },
         };
         polygon_json.push(tmp_polygon);
@@ -920,6 +943,7 @@ const getData = (jsonName, utc) => {
         tmp.push(marker_container[a][10]); //jsonName
         tmp.push(marker_container[a][11]); //rLink
         tmp.push(marker_container[a][12]); //linkType
+        tmp.push(marker_container[a][13]); //sourceId
         tank.push(tmp);
 
         const each = [];
@@ -954,6 +978,8 @@ const getData = (jsonName, utc) => {
             jsonName: outter[p][0][ret[4]][9],
             rLink: outter[p][0][ret[4]][10],
             linkType: outter[p][0][ret[4]][11],
+            sourceId: outter[p][0][ret[4]][12],
+            utc: utc,
           },
         };
 
@@ -976,20 +1002,53 @@ class AlertsService {
           return data;
         });
       })
-    ).then(
-      spread((...responses) => {
-        return responses.reduce(
-          (all, item) => {
-            all.features = all.features.concat(item);
+    )
+      .then(
+        spread((...responses) => {
+          return responses.reduce(
+            (all, item) => {
+              all.features = all.features.concat(item);
+              return all;
+            },
+            {
+              type: "FeatureCollection",
+              features: [],
+            }
+          );
+        })
+      )
+      .then((geojson) => {
+        const features = geojson.features
+          .filter((f) => f !== null)
+          .reduce((all, item) => {
+            let alertItem;
+            if (item.properties.jsonName == "others") {
+              if (booleanIntersects(africaGeojson, item)) {
+                alertItem = item;
+              }
+            } else {
+              alertItem = item;
+            }
+
+            if (alertItem) {
+              const sourceInfo = alertSources[alertItem.properties.sourceId];
+
+              if (sourceInfo) {
+                alertItem.properties.sourceInfo = sourceInfo;
+              }
+
+              all.push(alertItem);
+            }
+
             return all;
-          },
-          {
-            type: "FeatureCollection",
-            features: [],
-          }
-        );
-      })
-    );
+          }, []);
+
+        features.sort(function (a, b) {
+          return a.properties.severity - b.properties.severity;
+        });
+
+        return { ...geojson, features: features };
+      });
   }
 }
 
