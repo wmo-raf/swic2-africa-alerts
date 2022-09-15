@@ -2,6 +2,7 @@ const sources = {
   "dz-onm-fr": {
     country: "Algeria",
     organisation: "Office National de la Météorologie",
+    website: "https://www.meteo.dz/",
   },
   "bw-met-en": {
     country: "Botswana",
@@ -90,10 +91,12 @@ const sources = {
   "za-saws-en": {
     country: "South Africa",
     organisation: "South Africa Weather Service",
+    website: "https://www.weathersa.co.za/home/warningsfdi",
   },
   "tz-tma-en": {
     country: "Tanzania",
     organisation: "Meteorological Agency",
+    website: "http://www.meteo.go.tz/",
   },
   "tn-meteo-en": {
     country: "Tunisia",

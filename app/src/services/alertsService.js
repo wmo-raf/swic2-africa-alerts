@@ -3,6 +3,10 @@ import moment from "moment";
 import GeoJSONPolyline from "geojson-polyline";
 import geojsonhint from "@mapbox/geojsonhint";
 import booleanIntersects from "@turf/boolean-intersects";
+import isEmpty from "lodash/isEmpty.js";
+import isPlainObject from "lodash/isPlainObject.js";
+import * as txml from "txml";
+import turfCircle from "@turf/circle";
 
 import africaGeojson from "./africa.js";
 import alertSources from "./cap-sources.js";
@@ -10,6 +14,9 @@ import alertSources from "./cap-sources.js";
 const { all, spread, get } = axios;
 
 const COUNTRIES_LIST = ["southAfrica", "algeria", "others"];
+
+const CAP_DETAIL_URL_BASE =
+  "https://8xieiqdnye.execute-api.us-west-2.amazonaws.com/swic/capURL";
 
 function pad2(n) {
   return n < 10 ? "0" + n : n;
@@ -26,8 +33,6 @@ function chkByGeoJsonLint(in_link, in_json) {
           return /*'Line ' + error.line + ': ' +*/ error.message;
         })
         .join("<br>");
-      console.log(in_link);
-      console.log(message);
       valid = false;
     }
   }
@@ -880,7 +885,7 @@ const getData = (jsonName, utc) => {
             event: outter[p][0][ret[4]][2],
 
             // coord: outter[p][1],
-            radius: outter[p][2],
+            radius: Number(outter[p][2]),
 
             // lists: ret,
             same: outter[p][0][ret[4]][7],
@@ -991,6 +996,45 @@ const getData = (jsonName, utc) => {
   });
 };
 
+const standardizeCap = (capJson) => {
+  return Object.keys(capJson).reduce((all, key) => {
+    if (key.startsWith("cap:")) {
+      const itemKey = key.slice(4);
+      if (isPlainObject(capJson[key])) {
+        all[itemKey] = standardizeCap(capJson[key]);
+      } else {
+        all[itemKey] = capJson[key];
+      }
+    } else {
+      all[key] = capJson[key];
+    }
+    return all;
+  }, {});
+};
+
+const getDetail = (capLink) => {
+  const url = `${CAP_DETAIL_URL_BASE}/${capLink}`;
+
+  return axios.get(url).then((res) => {
+    const capXmlData = res.data;
+    const capJsonData = txml.parse(capXmlData, { simplify: true });
+
+    const standardCapJsonData = standardizeCap(capJsonData);
+
+    const alert = standardCapJsonData.alert;
+
+    // remove unnecessary properties
+    delete alert._attributes;
+    delete alert.info.area;
+    delete alert.info.circle;
+    delete alert.info.polygon;
+
+    const detail = { capLink: capLink, alert: standardCapJsonData.alert };
+
+    return detail;
+  });
+};
+
 class AlertsService {
   static async getAlerts() {
     return all(
@@ -1041,7 +1085,15 @@ class AlertsService {
             }
 
             return all;
-          }, []);
+          }, [])
+          .map((feature) => {
+            if (feature.properties.type === "circle") {
+              const f = turfCircle(feature, feature.properties.radius);
+              return { ...f, properties: feature.properties };
+            }
+
+            return feature;
+          });
 
         features.sort(function (a, b) {
           return a.properties.severity - b.properties.severity;
@@ -1049,6 +1101,28 @@ class AlertsService {
 
         return { ...geojson, features: features };
       });
+  }
+  static async getAlertsDetail(alertsGeojson) {
+    if (
+      alertsGeojson &&
+      alertsGeojson.features &&
+      !isEmpty(alertsGeojson.features)
+    ) {
+      const requests = alertsGeojson.features.reduce((all, item) => {
+        if (item.properties.link) {
+          all.push(getDetail(item.properties.link));
+        }
+        return all;
+      }, []);
+
+      return all(requests).then(
+        spread((...responses) => {
+          return responses;
+        })
+      );
+    }
+
+    return {};
   }
 }
 
