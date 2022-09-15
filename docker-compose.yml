@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  swic2_africa:
+    image: africahazardswatch.org/swic2-africa
+    container_name: swic2_africa
+    build: .
+    restart: ${RESTART_POLICY}
+    environment:
+      - PORT=${PORT}
+    ports:
+      - "${PORT}:${PORT}"
