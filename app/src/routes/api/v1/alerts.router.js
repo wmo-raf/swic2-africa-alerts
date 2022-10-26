@@ -11,7 +11,13 @@ class AlertsRouter {
   static async getAlerts(ctx) {
     const alerts = await AlertsService.getAlerts();
 
-    const alertsDetail = await AlertsService.getAlertsDetail(alerts);
+    const { detail } = ctx.request.query;
+
+    let alertsDetail = [];
+
+    if (detail) {
+      alertsDetail = await AlertsService.getAlertsDetail(alerts);
+    }
 
     const alertFeaturesWithDetail = alerts.features.map((feature) => {
       if (feature.properties.link) {
