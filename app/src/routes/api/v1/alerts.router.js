@@ -36,6 +36,13 @@ class AlertsRouter {
 
     ctx.body = alerts;
   }
+  static async getAlertDetail(ctx) {
+    const { capUrl, type } = ctx.request.query;
+
+    const alertDetail = await AlertsService.getAlertDetail(capUrl, type);
+
+    ctx.body = alertDetail;
+  }
   static async getRandomTestAlerts(ctx) {
     const featureCollection = randomPoint(random(1, 4), {
       bbox: [
@@ -60,6 +67,7 @@ class AlertsRouter {
 }
 
 router.get("/", AlertsRouter.getAlerts);
+router.get("/detail", AlertsRouter.getAlertDetail);
 router.get("/test", AlertsRouter.getRandomTestAlerts);
 
 export default router;

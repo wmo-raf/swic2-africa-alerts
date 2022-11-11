@@ -16,7 +16,7 @@ const { all, spread, get } = axios;
 const COUNTRIES_LIST = ["southAfrica", "algeria", "others"];
 
 const CAP_DETAIL_URL_BASE =
-  "https://8xieiqdnye.execute-api.us-west-2.amazonaws.com/swic/capURL";
+  "https://8xieiqdnye.execute-api.us-west-2.amazonaws.com/prod/capURL";
 
 function pad2(n) {
   return n < 10 ? "0" + n : n;
@@ -1012,7 +1012,7 @@ const standardizeCap = (capJson) => {
   }, {});
 };
 
-const getDetail = (capLink) => {
+const getDetail = (capLink, type) => {
   const url = `${CAP_DETAIL_URL_BASE}/${capLink}`;
 
   return axios.get(url).then((res) => {
@@ -1023,11 +1023,15 @@ const getDetail = (capLink) => {
 
     const alert = standardCapJsonData.alert;
 
+    if (type) {
+      var features_json = [];
+    }
+
     // remove unnecessary properties
-    delete alert._attributes;
-    delete alert.info.area;
-    delete alert.info.circle;
-    delete alert.info.polygon;
+    // delete alert._attributes;
+    // delete alert.info.area;
+    // delete alert.info.circle;
+    // delete alert.info.polygon;
 
     const detail = { capLink: capLink, alert: standardCapJsonData.alert };
 
@@ -1123,6 +1127,9 @@ class AlertsService {
     }
 
     return {};
+  }
+  static async getAlertDetail(capUrl, type) {
+    return getDetail(capUrl, type);
   }
 }
 

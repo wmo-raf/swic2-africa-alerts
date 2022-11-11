@@ -1,0 +1,1606 @@
+[
+
+    {
+        "ra": 2,
+        "members": [
+
+            {
+                "mid": "001",
+                "name": "China",
+                "dept": "China Meteorological Administration",
+                "lat": 35.86166,
+                "lng": 104.195397,
+                "url": "www.cma.gov.cn\/en2014\/",
+                "logo": "china_logo.png"
+            }, {
+                "mid": "002",
+                "name": "Hong Kong, China",
+                "dept": "Hong Kong Observatory",
+                "lat": 22.396428,
+                "lng": 114.109497,
+                "url": "www.weather.gov.hk",
+                "logo": "hko_logo.png"
+            }, {
+                "mid": "030",
+                "name": "Oman",
+                "dept": "Public Authority for Civil Aviation - Directorate General of Meteorology",
+                "lat": 21.512583,
+                "lng": 55.923255,
+                "url": "met.gov.om\/",
+                "logo": "oman_logo.png"
+            }, {
+                "mid": "031",
+                "name": "Nepal",
+                "dept": "Department of Hydrology and Meteorology",
+                "lat": 28.394857,
+                "lng": 84.124008,
+                "url": "www.dhm.gov.np\/",
+                "logo": "nepal_logo.png"
+            }, {
+                "mid": "032",
+                "name": "Uzbekistan",
+                "dept": "The Centre of Hydrometeorological Service at Cabinet of Minister's of Republic of Uzbekistan (UZHYDROMET)",
+                "lat": 41.377491,
+                "lng": 64.585262,
+                "url": "www.meteo.uz",
+                "logo": "uzbekistan_logo.png"
+            }, {
+                "mid": "047",
+                "name": "Pakistan",
+                "dept": "Pakistan Meteorological Department",
+                "lat": 30.375321,
+                "lng": 69.345116,
+                "url": "www.pmd.gov.pk",
+                "logo": ""
+            }, {
+                "mid": "051",
+                "name": "Bahrain",
+                "dept": "Bahrain Meteorological Service",
+                "lat": 26.0667,
+                "lng": 50.5577,
+                "url": "www.bahrainweather.com",
+                "logo": "bahrain_logo.png"
+            }, {
+                "mid": "066",
+                "name": "India",
+                "dept": "India Meteorological Department",
+                "lat": 20.593684,
+                "lng": 78.96288,
+                "url": "www.imd.gov.in\/",
+                "logo": "india_logo.png"
+            }, {
+                "mid": "068",
+                "name": "Japan",
+                "dept": "Japan Meteorological Agency",
+                "lat": 36.204824,
+                "lng": 138.252924,
+                "url": "www.jma.go.jp\/jma\/indexe.html",
+                "logo": "japan_logo.png"
+            }, {
+                "mid": "070",
+                "name": "Kazakhstan",
+                "dept": "Republican State Organization 'Kazhydromet'",
+                "lat": 48.019573,
+                "lng": 66.923684,
+                "url": "www.kazhydromet.kz",
+                "logo": "kazakstan_logo.png"
+            }, {
+                "mid": "072",
+                "name": "Macao, China",
+                "dept": "Meteorological and Geophysical Bureau, Macao, China",
+                "lat": 22.201874,
+                "lng": 113.544202,
+                "url": "www.smg.gov.mo\/www\/e_index.php",
+                "logo": "macao_logo.png"
+            }, {
+                "mid": "079",
+                "name": "Saudi Arabia",
+                "dept": "Presidency of Meteorology & Environment (PME)",
+                "lat": 23.885942,
+                "lng": 45.079162,
+                "url": "www.pme.gov.sa",
+                "logo": "saudiLogo.gif"
+            }, {
+                "mid": "082",
+                "name": "Viet Nam",
+                "dept": "Hydro-Meteorological Service of Vietnam",
+                "lat": 14.058324,
+                "lng": 108.277199,
+                "url": "www.nchmf.gov.vn",
+                "logo": "vietnam_logo.png"
+            }, {
+                "mid": "084",
+                "name": "Sri Lanka",
+                "dept": "Department of Meteorology, Sri Lanka",
+                "lat": 7.873054,
+                "lng": 80.771797,
+                "url": "www.meteo.gov.lk",
+                "logo": "sri_lanka_logo.png"
+            }, {
+                "mid": "089",
+                "name": "Thailand",
+                "dept": "Thai Meteorological Department",
+                "lat": 15.870032,
+                "lng": 100.992541,
+                "url": "www.tmd.go.th",
+                "logo": "thailand_logo.png"
+            }, {
+                "mid": "095",
+                "name": "Republic of Korea",
+                "dept": "Korea Meteorological Administration",
+                "lat": 35.907757,
+                "lng": 127.766922,
+                "url": "web.kma.go.kr\/eng\/index.jsp",
+                "logo": "kma_logo.png"
+            }, {
+                "mid": "107",
+                "name": "Russian Federation",
+                "dept": "Russian Federal Service For Hydrometeorology and Environmental Monitoring (ROSHYDROMET)",
+                "lat": 62.715726,
+                "lng": 97.057037,
+                "url": "www.meteorf.ru",
+                "logo": "russian_logo.png"
+            }, {
+                "mid": "110",
+                "name": "Tajikistan",
+                "dept": "Agency on hydrometeorology, Republic of Tajikistan",
+                "lat": 38.861034,
+                "lng": 71.276093,
+                "url": "www.meteo.tj",
+                "logo": ""
+            }, {
+                "mid": "111",
+                "name": "Turkmenistan",
+                "dept": "National Hydrometeorological Committee at Cabinet of Ministries of Turkmenistan",
+                "lat": 38.969719,
+                "lng": 59.556278,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "113",
+                "name": "Kuwait",
+                "dept": "Kuwait Meteorological Service",
+                "lat": 29.31166,
+                "lng": 47.481766,
+                "url": "www.met.gov.kw",
+                "logo": "KNMC.png"
+            }, {
+                "mid": "114",
+                "name": "Iran, Islamic Republic of",
+                "dept": "Islamic Republic Of Iran Meteorological Organization",
+                "lat": 38.473984,
+                "lng": 47.060551,
+                "url": "www.irimo.ir",
+                "logo": ""
+            }, {
+                "mid": "115",
+                "name": "Afghanistan",
+                "dept": "Afghan Meteorological Authority",
+                "lat": 33.93911,
+                "lng": 67.709953,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "116",
+                "name": "Qatar",
+                "dept": "Civil Aviation Authority<br>Department of Meteorology",
+                "lat": 25.354826,
+                "lng": 51.183884,
+                "url": "qweather.gov.qa\/Index.aspx",
+                "logo": "qatar_logo.png"
+            }, {
+                "mid": "117",
+                "name": "United Arab Emirates",
+                "dept": "The National Center of Meteorology and Seismology, Meteorological Department",
+                "lat": 23.424076,
+                "lng": 53.847818,
+                "url": "www.ncms.ae\/en",
+                "logo": ""
+            }, {
+                "mid": "118",
+                "name": "Maldives",
+                "dept": "Department of Meteorology",
+                "lat": 1.977247,
+                "lng": 73.536103,
+                "url": "www.meteorology.gov.mv",
+                "logo": ""
+            }, {
+                "mid": "119",
+                "name": "Mongolia",
+                "dept": "Institute of Meteorology and Hydrology",
+                "lat": 46.862496,
+                "lng": 103.846656,
+                "url": "www.namem.gov.mn",
+                "logo": "IMH_logo.jpg"
+            }, {
+                "mid": "120",
+                "name": "Democratic People's Republic of Korea",
+                "dept": "State Hydrometeorological Administration",
+                "lat": 40.339852,
+                "lng": 127.510093,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "121",
+                "name": "Lao People's Democratic Republic",
+                "dept": "Department of Meteorology and Hydrology",
+                "lat": 19.85627,
+                "lng": 102.495496,
+                "url": "dmhlao.etllao.com",
+                "logo": "dmh_laos.png"
+            }, {
+                "mid": "141",
+                "name": "Bangladesh",
+                "dept": "Bangladesh Meteorological Department",
+                "lat": 23.684994,
+                "lng": 90.356331,
+                "url": "www.bmd.gov.bd\/?\/home",
+                "logo": ""
+            }, {
+                "mid": "145",
+                "name": "Cambodia",
+                "dept": "Department of Meteorology, Ministry of Water Resources and Meteorology",
+                "lat": 12.565679,
+                "lng": 104.990963,
+                "url": "www.cambodiameteo.com\/map?menu=3&lang=en",
+                "logo": "cambodia_logo.png"
+            }, {
+                "mid": "154",
+                "name": "Iraq",
+                "dept": "Iraqi Meteorological Organization",
+                "lat": 33.223191,
+                "lng": 43.679291,
+                "url": "",
+                "logo": "iraq_logo.png"
+            }, {
+                "mid": "163",
+                "name": "Yemen",
+                "dept": "Civil Aviation & Met Authority - Yemen meteorological Service",
+                "lat": 15.552727,
+                "lng": 48.516388,
+                "url": "www.yms.gov.ye",
+                "logo": ""
+            }, {
+                "mid": "177",
+                "name": "Kyrgyzstan",
+                "dept": "Agency on Hydrometeorology under Ministry of Emergency Situations of the Kyrgyz Republic",
+                "lat": 41.20438,
+                "lng": 74.766098,
+                "url": "www.meteo.ktnet.kg",
+                "logo": "kyrgyz_logo.png"
+            }, {
+                "mid": "180",
+                "name": "Myanmar",
+                "dept": "Department of Meteorology and Hydrology",
+                "lat": 21.913965,
+                "lng": 95.956223,
+                "url": "www.dmh.gov.mm",
+                "logo": "myanmar_logo.png"
+            }, {
+                "mid": "191",
+                "name": "Bhutan",
+                "dept": "Department of Hydro Met Services",
+                "lat": 27.514162,
+                "lng": 90.433601,
+                "url": "www.hydromet.gov.bt",
+                "logo": "agrologo.png"
+            }
+        ]
+    },
+
+    {
+        "ra": 6,
+        "members": [
+
+            {
+                "mid": "003",
+                "name": "Portugal",
+                "dept": "Portuguese Institute for Ocean and Atmosphere (IPMA)",
+                "lat": 39.399872,
+                "lng": -8.224454,
+                "url": "www.ipma.pt",
+                "logo": "portugal_logo.png"
+            }, {
+                "mid": "005",
+                "name": "Bosnia and Herzegovina",
+                "dept": "Meteorological Institute of Bosnia and Herzegovina",
+                "lat": 43.915886,
+                "lng": 17.679076,
+                "url": "www.fhmzbih.gov.ba",
+                "logo": "bosnia_logo.png"
+            }, {
+                "mid": "006",
+                "name": "Austria",
+                "dept": "Central Institute for Meteorology and Geodynamics",
+                "lat": 47.516231,
+                "lng": 14.550072,
+                "url": "www.zamg.ac.at",
+                "logo": "austria_logo.png"
+            }, {
+                "mid": "007",
+                "name": "Azerbaijan",
+                "dept": "National Hydrometeorological Department of the Ministry of Ecology and Natural Resources of Azerbaijan Republic",
+                "lat": 40.143105,
+                "lng": 47.576927,
+                "url": "www.eco.gov.az",
+                "logo": "azerbaijan_logo.png"
+            }, {
+                "mid": "008",
+                "name": "Norway",
+                "dept": "Norwegian Meteorological Institute",
+                "lat": 60.472024,
+                "lng": 8.468946,
+                "url": "www.met.no",
+                "logo": "norway_logo.png"
+            }, {
+                "mid": "009",
+                "name": "Poland",
+                "dept": "Institute of Meteorology and Water Management",
+                "lat": 51.919438,
+                "lng": 19.145136,
+                "url": "www.imgw.pl",
+                "logo": "poland_logo.png"
+            }, {
+                "mid": "010",
+                "name": "United Kingdom of Great Britain and Northern Ireland",
+                "dept": "Met Office",
+                "lat": 52.801634,
+                "lng": -3.699644,
+                "url": "www.metoffice.gov.uk",
+                "logo": "uk_logo.png"
+            }, {
+                "mid": "011",
+                "name": "Slovakia",
+                "dept": "Slovak Hydrometeorological Institute",
+                "lat": 48.669026,
+                "lng": 19.699024,
+                "url": "www.shmu.sk",
+                "logo": "slovakia_logo.png"
+            }, {
+                "mid": "012",
+                "name": "Malta",
+                "dept": "Meteorological Office Malta International Airport",
+                "lat": 35.937496,
+                "lng": 14.375416,
+                "url": "www.maltairport.com\/weather\/",
+                "logo": "malta_logo.png"
+            }, {
+                "mid": "013",
+                "name": "Israel",
+                "dept": "Israel Meteorological Service",
+                "lat": 31.046051,
+                "lng": 34.851612,
+                "url": "www.ims.gov.il\/IMSENG\/All_Tahazit\/homepage.htm",
+                "logo": "israel_logo.png"
+            }, {
+                "mid": "014",
+                "name": "Turkey",
+                "dept": "Turkish State Meteorological Service",
+                "lat": 38.963745,
+                "lng": 35.243322,
+                "url": "www.mgm.gov.tr",
+                "logo": "turkey_logo.png"
+            }, {
+                "mid": "015",
+                "name": "Slovenia",
+                "dept": "Environmental Agency of the Republic of Slovenia",
+                "lat": 46.151241,
+                "lng": 14.995463,
+                "url": "www.arso.gov.si",
+                "logo": "arso.png"
+            }, {
+                "mid": "016",
+                "name": "Germany",
+                "dept": "Deutscher Wetterdienst",
+                "lat": 51.165691,
+                "lng": 10.451526,
+                "url": "www.dwd.de",
+                "logo": "germany_logo.png"
+            }, {
+                "mid": "017",
+                "name": "Hungary",
+                "dept": "Hungarian Meteorological Service",
+                "lat": 47.162494,
+                "lng": 19.503304,
+                "url": "www.met.hu",
+                "logo": "hungary_logo.png"
+            }, {
+                "mid": "018",
+                "name": "Armenia",
+                "dept": "Department of Hydrometeorology of the Republic of Armenia",
+                "lat": 40.069099,
+                "lng": 45.038189,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "019",
+                "name": "Croatia",
+                "dept": "Meteorological and Hydrological Service",
+                "lat": 45.1,
+                "lng": 15.2,
+                "url": "meteo.hr\/index_en.php",
+                "logo": "croatia_logo.png"
+            }, {
+                "mid": "037",
+                "name": "Netherlands",
+                "dept": "Royal Netherlands Meteorological Institute",
+                "lat": 52.132633,
+                "lng": 5.291266,
+                "url": "www.knmi.nl",
+                "logo": "netherlands_logo.png"
+            }, {
+                "mid": "039",
+                "name": "Estonia",
+                "dept": "Estonian Environment Agency",
+                "lat": 58.595272,
+                "lng": 25.013607,
+                "url": "www.emhi.ee\/?nlan=eng",
+                "logo": "estonia_logo.png"
+            }, {
+                "mid": "044",
+                "name": "Latvia",
+                "dept": "Latvian Environment, Geology and Meteorology Centre",
+                "lat": 56.879635,
+                "lng": 24.603189,
+                "url": "www.meteo.lv\/en\/",
+                "logo": "latvia_logo_normal.png"
+            }, {
+                "mid": "053",
+                "name": "Belgium",
+                "dept": "Royal Meteorological Institute of Belgium",
+                "lat": 50.503887,
+                "lng": 4.469936,
+                "url": "www.meteo.be\/IRM-KMI\/",
+                "logo": "belgium_logo.png"
+            }, {
+                "mid": "061",
+                "name": "Finland",
+                "dept": "Finnish Meteorological Institute",
+                "lat": 63.875177,
+                "lng": 25.330671,
+                "url": "www.fmi.fi\/en\/index.html",
+                "logo": "finland_logo.png"
+            }, {
+                "mid": "062",
+                "name": "France",
+                "dept": "Meteo France",
+                "lat": 46.227638,
+                "lng": 2.213749,
+                "url": "www.meteo.fr\/meteonet_en\/index.htm",
+                "logo": "france_logo.png"
+            }, {
+                "mid": "063",
+                "name": "Greece",
+                "dept": "Hellenic National Meteorological Service (HNMS)",
+                "lat": 39.074208,
+                "lng": 21.824312,
+                "url": "www.hnms.gr",
+                "logo": "greece_logo.png"
+            }, {
+                "mid": "067",
+                "name": "Ireland",
+                "dept": "The Irish Meteorological Service",
+                "lat": 53.41291,
+                "lng": -8.24389,
+                "url": "www.met.ie",
+                "logo": "ireland_logo.png"
+            }, {
+                "mid": "069",
+                "name": "Jordan",
+                "dept": "Department of Meteorology, National Forecast Center",
+                "lat": 30.585164,
+                "lng": 36.238414,
+                "url": "www.jometeo.gov.jo",
+                "logo": "jordan_logo.png"
+            }, {
+                "mid": "070",
+                "name": "Kazakhstan",
+                "dept": "Republican State Organization 'Kazhydromet'",
+                "lat": 48.019573,
+                "lng": 66.923684,
+                "url": "www.kazhydromet.kz",
+                "logo": "kazakstan_logo.png"
+            }, {
+                "mid": "083",
+                "name": "Spain",
+                "dept": "Agencia Estatal de Meteorologia",
+                "lat": 40.463667,
+                "lng": -3.74922,
+                "url": "www.aemet.es",
+                "logo": "spain_logo.png"
+            }, {
+                "mid": "087",
+                "name": "Switzerland",
+                "dept": "Federal Office of Meteorology and Climatology (MeteoSwiss)",
+                "lat": 46.818188,
+                "lng": 8.227512,
+                "url": "www.meteoswiss.ch\/web\/en\/weather.html",
+                "logo": "switzerland_logo.png"
+            }, {
+                "mid": "090",
+                "name": "North Macedonia",
+                "dept": "Hydrometeorological Service",
+                "lat": 41.608635,
+                "lng": 21.745275,
+                "url": "www.meteo.gov.mk\/",
+                "logo": "macedonia_logo.png"
+            }, {
+                "mid": "092",
+                "name": "Ukraine",
+                "dept": "Ukrainian Hydrometeorological Centre",
+                "lat": 48.379433,
+                "lng": 31.16558,
+                "url": "www.meteo.gov.ua",
+                "logo": "ukraine_logo.png"
+            }, {
+                "mid": "096",
+                "name": "Sweden",
+                "dept": "Swedish Meteorological and Hydrological Institute (SMHI)",
+                "lat": 60.128161,
+                "lng": 18.643501,
+                "url": "www.smhi.se",
+                "logo": "sweden_logo.png"
+            }, {
+                "mid": "097",
+                "name": "Iceland",
+                "dept": "Icelandic Meteorological Office",
+                "lat": 64.963051,
+                "lng": -19.020835,
+                "url": "www.vedur.is\/english",
+                "logo": "iceland_logo.png"
+            }, {
+                "mid": "098",
+                "name": "Luxembourg",
+                "dept": "Air Navigation Administration (ANA), Meteolux",
+                "lat": 49.815273,
+                "lng": 6.129583,
+                "url": "www.meteolux.lu",
+                "logo": "luxembourg_logo.png"
+            }, {
+                "mid": "099",
+                "name": "Syrian Arab Republic",
+                "dept": "Syrian Meteorological Department",
+                "lat": 34.802075,
+                "lng": 38.996815,
+                "url": "www.meteo.sy",
+                "logo": "metlogo_small.jpg"
+            }, {
+                "mid": "101",
+                "name": "Serbia",
+                "dept": "Republic Hydrometeorological Service of Serbia",
+                "lat": 44.016521,
+                "lng": 21.005859,
+                "url": "www.meteo.rs",
+                "logo": "Serbia_logo.png"
+            }, {
+                "mid": "102",
+                "name": "Albania",
+                "dept": "",
+                "lat": 41.153332,
+                "lng": 20.168331,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "103",
+                "name": "Bulgaria",
+                "dept": "National Institute of Meteorology and Hydrology",
+                "lat": 42.733883,
+                "lng": 25.48583,
+                "url": "www.meteo.bg\/en",
+                "logo": "bulgaria_logo.png"
+            }, {
+                "mid": "104",
+                "name": "Cyprus",
+                "dept": "Meteorological Service",
+                "lat": 35.126413,
+                "lng": 33.429859,
+                "url": "www.moa.gov.cy\/ms",
+                "logo": "cyprus_logo.jpg"
+            }, {
+                "mid": "105",
+                "name": "Lithuania",
+                "dept": "Lithuanian Hydrometeorological Service",
+                "lat": 55.369728,
+                "lng": 23.639575,
+                "url": "www.meteo.lt\/",
+                "logo": "lithuania_logo.png"
+            }, {
+                "mid": "106",
+                "name": "Belarus",
+                "dept": "Department of Hydrometeorology",
+                "lat": 53.709807,
+                "lng": 27.953389,
+                "url": "www.pogoda.by",
+                "logo": "Bel-HMC.gif"
+            }, {
+                "mid": "107",
+                "name": "Russian Federation",
+                "dept": "Russian Federal Service For Hydrometeorology and Environmental Monitoring (ROSHYDROMET)",
+                "lat": 62.715726,
+                "lng": 97.057037,
+                "url": "www.meteorf.ru",
+                "logo": "russian_logo.png"
+            }, {
+                "mid": "108",
+                "name": "Republic of Moldova",
+                "dept": "State Hydrometeorological Service",
+                "lat": 47.411631,
+                "lng": 28.369885,
+                "url": "www.meteo.md",
+                "logo": "logoSHS_Moldova.png"
+            }, {
+                "mid": "109",
+                "name": "Georgia",
+                "dept": "Department of Hydrometeorology",
+                "lat": 41.68,
+                "lng": 44.95,
+                "url": "www.meteo.gov.ge",
+                "logo": ""
+            }, {
+                "mid": "112",
+                "name": "Lebanon",
+                "dept": "",
+                "lat": 33.854721,
+                "lng": 35.862285,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "160",
+                "name": "Monaco",
+                "dept": "",
+                "lat": 43.738418,
+                "lng": 7.424616,
+                "url": "",
+                "logo": ""
+            }, {
+                "mid": "172",
+                "name": "Czech Republic",
+                "dept": "Czech Hydrometeorological Institute",
+                "lat": 49.817492,
+                "lng": 15.472962,
+                "url": "www.chmi.cz",
+                "logo": "czech_logo.png"
+            }, {
+                "mid": "173",
+                "name": "Denmark",
+                "dept": "Danish Meteorological Institute",
+                "lat": 56.26392,
+                "lng": 9.501785,
+                "url": "www.dmi.dk\/eng\/index\/forecasts.htm",
+                "logo": "denmark_logo.png"
+            }, {
+                "mid": "176",
+                "name": "Italy",
+                "dept": "Italian Air Force National Meteorological Service",
+                "lat": 41.87194,
+                "lng": 12.56738,
+                "url": "www.meteoam.it",
+                "logo": "italy_logo.png"
+            }, {
+                "mid": "183",
+                "name": "Romania",
+                "dept": "National Meteorological Administration (NMA)",
+                "lat": 45.943161,
+                "lng": 24.96676,
+                "url": "www.inmh.ro",
+                "logo": "romania_logo.png"
+            }, {
+                "mid": "193",
+                "name": "Montenegro",
+                "dept": "Hydrological and Meteorological Service of Montenegro",
+                "lat": 42.708678,
+                "lng": 19.37439,
+                "url": "www.meteo.co.me",
+                "logo": "HMZCG-Logo1.jpg"
+            }
+        ]
+    }, {
+        "ra": 1,
+        "members": [{
+            "mid": "004",
+            "name": "Madagascar",
+            "dept": "Direction Generale de la Meteorologie",
+            "lat": -18.766947,
+            "lng": 46.869107,
+            "url": "www.meteomadagascar.mg",
+            "logo": "madagascar_logo.png"
+        }, {
+            "mid": "010",
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "dept": "Met Office",
+            "lat": 52.801634,
+            "lng": -3.699644,
+            "url": "www.metoffice.gov.uk",
+            "logo": "uk_logo.png"
+        }, {
+            "mid": "033",
+            "name": "Mozambique",
+            "dept": "Instituto Nacional de Meteorologia",
+            "lat": -18.665695,
+            "lng": 35.529562,
+            "url": "www.inam.gov.mz",
+            "logo": ""
+        }, {
+            "mid": "034",
+            "name": "Mali",
+            "dept": "National Meteorological Service",
+            "lat": 17.570692,
+            "lng": -3.996166,
+            "url": "",
+            "logo": "mali_logo.png"
+        }, {
+            "mid": "035",
+            "name": "South Africa",
+            "dept": "South African Weather Service",
+            "lat": -30.559482,
+            "lng": 22.937506,
+            "url": "www.weathersa.co.za",
+            "logo": "s_africa_logo.png"
+        }, {
+            "mid": "036",
+            "name": "Gambia",
+            "dept": "Department of Water Resources",
+            "lat": 13.443182,
+            "lng": -15.310139,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "040",
+            "name": "Zambia",
+            "dept": "Zambia Meteorological Department",
+            "lat": -13.133897,
+            "lng": 27.849332,
+            "url": "www.zmd.gov.zm",
+            "logo": "zmd_logo.png"
+        }, {
+            "mid": "042",
+            "name": "Eritrea",
+            "dept": "AIAM (Asmara Int'l Airport Manegement) Meteorological Services",
+            "lat": 15.179384,
+            "lng": 39.782334,
+            "url": "",
+            "logo": "eritrea_logo.png"
+        }, {
+            "mid": "045",
+            "name": "Morocco",
+            "dept": "National Meteorological Direction",
+            "lat": 31.791702,
+            "lng": -7.09262,
+            "url": "www.marocmeteo.ma",
+            "logo": "morocco_logo.png"
+        }, {
+            "mid": "048",
+            "name": "Senegal",
+            "dept": "National Meteorological Services",
+            "lat": 14.497401,
+            "lng": -14.452362,
+            "url": "www.anacim.sn",
+            "logo": ""
+        }, {
+            "mid": "049",
+            "name": "United Republic of Tanzania",
+            "dept": "Tanzania Meteorological Agency",
+            "lat": -6.369028,
+            "lng": 34.888822,
+            "url": "www.meteo.go.tz",
+            "logo": "tanzania_logo.png"
+        }, {
+            "mid": "055",
+            "name": "Cameroon",
+            "dept": "Direction de la Meteorologie Nationale",
+            "lat": 7.369722,
+            "lng": 12.354722,
+            "url": "www.meteo-cameroon.net",
+            "logo": "cameroon_logo.jpg"
+        }, {
+            "mid": "058",
+            "name": "Comoros",
+            "dept": "Direction de la Meteoroloie nationale",
+            "lat": -11.6455,
+            "lng": 43.3333,
+            "url": "",
+            "logo": "comoros_logo.png"
+        }, {
+            "mid": "059",
+            "name": "Egypt",
+            "dept": "The Egyptian Meteorological Authority",
+            "lat": 26.820553,
+            "lng": 30.802498,
+            "url": "nwp.gov.eg\/",
+            "logo": "top_egypt.jpg"
+        }, {
+            "mid": "060",
+            "name": "Ethiopia",
+            "dept": "National Meteorological Agency",
+            "lat": 9.145,
+            "lng": 40.489673,
+            "url": "www.ethiomet.gov.et",
+            "logo": "Logonmsa.gif"
+        }, {
+            "mid": "064",
+            "name": "Guinea-Bissau",
+            "dept": "Instituto Nacional de la Meteorologia (INM-GB)",
+            "lat": 11.803749,
+            "lng": -15.180413,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "071",
+            "name": "Kenya",
+            "dept": "Kenya Meteorological Department",
+            "lat": -0.023559,
+            "lng": 37.906193,
+            "url": "www.meteo.go.ke\/",
+            "logo": "kenya_logo.png"
+        }, {
+            "mid": "073",
+            "name": "Malawi",
+            "dept": "National Meteorological Centre",
+            "lat": -13.254308,
+            "lng": 34.301525,
+            "url": "www.metmalawi.com",
+            "logo": ""
+        }, {
+            "mid": "074",
+            "name": "Niger",
+            "dept": "Directeur de la Meteorologie Nationale Service meteorologique",
+            "lat": 17.607789,
+            "lng": 8.081666,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "075",
+            "name": "Nigeria",
+            "dept": "Nigerian Meteorological Agency",
+            "lat": 9.081999,
+            "lng": 8.675277,
+            "url": "www.nimet.gov.ng",
+            "logo": "nigeria_logo.png"
+        }, {
+            "mid": "078",
+            "name": "Sao Tome and Principe",
+            "dept": "Instituto Nacional de Meteorologia",
+            "lat": 0.18636,
+            "lng": 6.613081,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "080",
+            "name": "Seychelles",
+            "dept": "Seychelles Meteorological Authority",
+            "lat": -4.679574,
+            "lng": 55.491977,
+            "url": "www.meteo.gov.sc",
+            "logo": "seychelles_logo.png"
+        }, {
+            "mid": "085",
+            "name": "Sudan",
+            "dept": "Sudan Meteorological Authority",
+            "lat": 12.862807,
+            "lng": 30.217636,
+            "url": "www.ersad.gov.sd",
+            "logo": "sudan_logo.png"
+        }, {
+            "mid": "088",
+            "name": "Chad",
+            "dept": "Direction des Ressources en Eau et de la Meteorologie (DREM)",
+            "lat": 15.454166,
+            "lng": 18.732207,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "091",
+            "name": "Togo",
+            "dept": "SERVICE DE LA METEOROLOGIE NATIONALE DU TOGO",
+            "lat": 8.619543,
+            "lng": 0.824782,
+            "url": "www.meteo-togo.net\/",
+            "logo": ""
+        }, {
+            "mid": "100",
+            "name": "Cape Verde",
+            "dept": "",
+            "lat": 15.121729,
+            "lng": -23.605082,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "122",
+            "name": "Algeria",
+            "dept": "National Meteorological Office",
+            "lat": 28.033886,
+            "lng": 1.659626,
+            "url": "www.meteo.dz",
+            "logo": "algeria_logo.png"
+        }, {
+            "mid": "123",
+            "name": "Tunisia",
+            "dept": "Institut National de la Meteorologie",
+            "lat": 33.886917,
+            "lng": 9.537499,
+            "url": "www.meteo.tn",
+            "logo": ""
+        }, {
+            "mid": "124",
+            "name": "Guinea",
+            "dept": "Direction Nationale de la Meteorologie",
+            "lat": 9.945587,
+            "lng": -9.696645,
+            "url": "",
+            "logo": "guinea_logo.png"
+        }, {
+            "mid": "125",
+            "name": "Sierra Leone",
+            "dept": "",
+            "lat": 8.460555,
+            "lng": -11.779889,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "126",
+            "name": "Djibouti",
+            "dept": "",
+            "lat": 11.825138,
+            "lng": 42.590275,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "127",
+            "name": "Rwanda",
+            "dept": "Rwanda Meteorology Agency",
+            "lat": -1.940278,
+            "lng": 29.873888,
+            "url": "www.meteorwanda.gov.rw",
+            "logo": "rwanda_logo.jpg"
+        }, {
+            "mid": "128",
+            "name": "Gabon",
+            "dept": "Direction Generale de la Meteorologie",
+            "lat": -0.803689,
+            "lng": 11.609444,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "129",
+            "name": "Angola",
+            "dept": "Instituto Nacional de Hidrometeorologia e Geofisica",
+            "lat": -11.202692,
+            "lng": 17.873887,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "130",
+            "name": "Zimbabwe",
+            "dept": "Zimbabwe Department Meteorological Services",
+            "lat": -19.015438,
+            "lng": 29.154857,
+            "url": "",
+            "logo": "zimbabwe_logo.png"
+        }, {
+            "mid": "142",
+            "name": "Botswana",
+            "dept": "Botswana Meteorological Services",
+            "lat": -22.328474,
+            "lng": 24.684866,
+            "url": "www.weather.info.bw",
+            "logo": "botswana_logo.jpg"
+        }, {
+            "mid": "143",
+            "name": "Burkina Faso",
+            "dept": "",
+            "lat": 12.238333,
+            "lng": -1.561593,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "144",
+            "name": "Burundi",
+            "dept": "Institut Geographique du Burundi",
+            "lat": -3.373056,
+            "lng": 29.918886,
+            "url": "www.meteo.gov.bi",
+            "logo": ""
+        }, {
+            "mid": "146",
+            "name": "Central African Republic",
+            "dept": "",
+            "lat": 6.611111,
+            "lng": 20.939444,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "147",
+            "name": "Congo",
+            "dept": "",
+            "lat": -0.228021,
+            "lng": 15.827659,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "149",
+            "name": "Cote d'Ivoire",
+            "dept": "SODEXAM/NATIONAL METEOROLOGICAL SERVICE OF COTE D'IVOIRE",
+            "lat": 7.539989,
+            "lng": -5.54708,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "150",
+            "name": "Democratic Republic of the Congo",
+            "dept": "",
+            "lat": -4.038333,
+            "lng": 21.758664,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "151",
+            "name": "Ghana",
+            "dept": "Ghana Meteorological Services Department",
+            "lat": 7.946527,
+            "lng": -1.023194,
+            "url": "www.meteo.gov.gh",
+            "logo": ""
+        }, {
+            "mid": "155",
+            "name": "Lesotho",
+            "dept": "Lesotho Meteorological Services",
+            "lat": -29.609988,
+            "lng": 28.233608,
+            "url": "www.lesmet.org.ls",
+            "logo": "lms_logo.jpg"
+        }, {
+            "mid": "156",
+            "name": "Liberia",
+            "dept": "",
+            "lat": 6.428055,
+            "lng": -9.429499,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "157",
+            "name": "Libya",
+            "dept": "National Meteorological Centre",
+            "lat": 26.3351,
+            "lng": 17.228331,
+            "url": "www.lnmc.ly",
+            "logo": "Libyan_normal.JPG"
+        }, {
+            "mid": "158",
+            "name": "Mauritania",
+            "dept": "",
+            "lat": 21.00789,
+            "lng": -10.940835,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "161",
+            "name": "Namibia",
+            "dept": "Namibia Meteorological Service",
+            "lat": -22.95764,
+            "lng": 18.49041,
+            "url": "www.meteona.com",
+            "logo": "namibia_logo.png"
+        }, {
+            "mid": "165",
+            "name": "Somalia",
+            "dept": "",
+            "lat": 5.152149,
+            "lng": 46.199616,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "166",
+            "name": "Eswatini",
+            "dept": "Eswatini Meteorological Services",
+            "lat": -26.522503,
+            "lng": 31.465866,
+            "url": "www.swazimet.gov.sz",
+            "logo": "swaziland_logo.jpg"
+        }, {
+            "mid": "168",
+            "name": "Uganda",
+            "dept": "Uganda Department of Meteorology",
+            "lat": 1.373333,
+            "lng": 32.290275,
+            "url": "www.unma.go.ug",
+            "logo": ""
+        }, {
+            "mid": "170",
+            "name": "Benin",
+            "dept": "Direction Nationale de la Meteorologie",
+            "lat": 9.30769,
+            "lng": 2.315834,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "178",
+            "name": "Mauritius",
+            "dept": "Mauritius Meteorological Services",
+            "lat": -20.348404,
+            "lng": 57.552152,
+            "url": "metservice.intnet.mu",
+            "logo": "mms.png"
+        }, {
+            "mid": "203",
+            "name": "South Sudan",
+            "dept": "South Sudan Weather Service",
+            "lat": 7.963092,
+            "lng": 30.15893,
+            "url": "",
+            "logo": ""
+        }]
+    }, {
+        "ra": 4,
+        "members": [{
+            "mid": "010",
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "dept": "Met Office",
+            "lat": 52.801634,
+            "lng": -3.699644,
+            "url": "www.metoffice.gov.uk",
+            "logo": "uk_logo.png"
+        }, {
+            "mid": "024",
+            "name": "British Caribbean Territories",
+            "dept": "National Meteorological Service of the Cayman Islands",
+            "lat": 20.15402,
+            "lng": -76.085601,
+            "url": "www.gov.ky",
+            "logo": "britishct_logo.png"
+        }, {
+            "mid": "025",
+            "name": "Bahamas",
+            "dept": "The Bahamas Department of Meteorology",
+            "lat": 25.03428,
+            "lng": -77.39628,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "026",
+            "name": "Jamaica",
+            "dept": "Meteorological Service, Jamaica",
+            "lat": 18.109581,
+            "lng": -77.297508,
+            "url": "www.metservice.gov.jm",
+            "logo": "jamaica_logo.png"
+        }, {
+            "mid": "027",
+            "name": "Trinidad and Tobago",
+            "dept": "Trinidad and Tobago Meteorological Service",
+            "lat": 10.691803,
+            "lng": -61.222503,
+            "url": "www.metoffice.gov.tt",
+            "logo": "trinidad_logo.png"
+        }, {
+            "mid": "038",
+            "name": "Belize",
+            "dept": "National Meteorological Service Belize",
+            "lat": 17.189877,
+            "lng": -88.49765,
+            "url": "www.nms.gov.bz",
+            "logo": "belize_logo.png"
+        }, {
+            "mid": "041",
+            "name": "Antigua and Barbuda",
+            "dept": "Antigua\/Barbuda Meteorological Services",
+            "lat": 17.060816,
+            "lng": -61.796428,
+            "url": "www.antiguamet.com",
+            "logo": ""
+        }, {
+            "mid": "052",
+            "name": "Barbados",
+            "dept": "Barbados Meteorological Services",
+            "lat": 13.193887,
+            "lng": -59.543198,
+            "url": "www.barbadosweather.org",
+            "logo": ""
+        }, {
+            "mid": "056",
+            "name": "Canada",
+            "dept": "Meteorological Service of Canada",
+            "lat": 53.077657,
+            "lng": -94.569427,
+            "url": "weather.gc.ca\/canada_e.html",
+            "logo": "canada_logo.png"
+        }, {
+            "mid": "076",
+            "name": "Panama",
+            "dept": "Empresa de Transmision Electrica, S.A. (ETESA)",
+            "lat": 8.537981,
+            "lng": -80.782127,
+            "url": "www.hidromet.com.pa\/",
+            "logo": "panama_logo.png"
+        }, {
+            "mid": "093",
+            "name": "United States of America",
+            "dept": "National Weather Service",
+            "lat": 37.09024,
+            "lng": -95.712891,
+            "url": "www.nws.noaa.gov\/",
+            "logo": "usa_logo.png"
+        }, {
+            "mid": "131",
+            "name": "Cuba",
+            "dept": "Institute of Meteorology",
+            "lat": 21.521757,
+            "lng": -77.781167,
+            "url": "www.insmet.cu",
+            "logo": "cuba_logo.png"
+        }, {
+            "mid": "132",
+            "name": "Dominican Republic",
+            "dept": "Oficina Nacional de Meteorologia",
+            "lat": 18.735693,
+            "lng": -70.162651,
+            "url": "www.onamet.gov.do",
+            "logo": "Dominican_Rep_logo.png"
+        }, {
+            "mid": "133",
+            "name": "Honduras",
+            "dept": "National Weather Service of Honduras",
+            "lat": 15.199999,
+            "lng": -86.241905,
+            "url": "www.smn.gob.hn",
+            "logo": ""
+        }, {
+            "mid": "134",
+            "name": "Dominica",
+            "dept": "Dominica Meteorological Services",
+            "lat": 15.414999,
+            "lng": -61.370976,
+            "url": "www.weather.gov.dm",
+            "logo": ""
+        }, {
+            "mid": "152",
+            "name": "Guatemala",
+            "dept": "Insituto Nacional de Sismologia Vulcanologia Meteorologia e Hidrologia",
+            "lat": 15.783471,
+            "lng": -90.230759,
+            "url": "www.insivumeh.gob.gt",
+            "logo": "insivumeh.jpg"
+        }, {
+            "mid": "153",
+            "name": "Haiti",
+            "dept": "Haiti National Meteorological Service",
+            "lat": 18.971187,
+            "lng": -72.285215,
+            "url": "www.meteo-haiti.gouv.ht\/index.html",
+            "logo": "drapeau.png"
+        }, {
+            "mid": "164",
+            "name": "Saint Lucia",
+            "dept": "Meteorological Service",
+            "lat": 13.909444,
+            "lng": -60.978893,
+            "url": "www.slumet.gov.lc",
+            "logo": "saintlucia_logo.png"
+        }, {
+            "mid": "171",
+            "name": "Costa Rica",
+            "dept": "Instituto Meteorologico Nacional",
+            "lat": 9.748917,
+            "lng": -83.753428,
+            "url": "www.imn.ac.cr\/",
+            "logo": "costa_rica_logo.png"
+        }, {
+            "mid": "174",
+            "name": "El Salvador",
+            "dept": "Servicio Nacional de Estudios Territoriales",
+            "lat": 13.794185,
+            "lng": -88.89653,
+            "url": "www.marn.gob.sv",
+            "logo": "logo_normal.png"
+        }, {
+            "mid": "179",
+            "name": "Mexico",
+            "dept": "Comision Nacional Del Agua",
+            "lat": 23.634501,
+            "lng": -102.552784,
+            "url": "smn.cna.gob.mx",
+            "logo": "mexico_logo.jpg"
+        }, {
+            "mid": "182",
+            "name": "Nicaragua",
+            "dept": "Instituto Nicaraguense de Estudios Territoriales",
+            "lat": 12.865416,
+            "lng": -85.207229,
+            "url": "www.ineter.gob.ni",
+            "logo": ""
+        }, {
+            "mid": "181",
+            "name": "Curacao and Sint Maarten",
+            "dept": "",
+            "lat": 12.111716,
+            "lng": -68.936027,
+            "url": "",
+            "logo": ""
+        }]
+    }, {
+        "ra": 5,
+        "members": [{
+            "mid": "010",
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "dept": "Met Office",
+            "lat": 52.801634,
+            "lng": -3.699644,
+            "url": "www.metoffice.gov.uk",
+            "logo": "uk_logo.png"
+        }, {
+            "mid": "020",
+            "name": "Malaysia",
+            "dept": "Malaysia Meteorological Department",
+            "lat": 4.210484,
+            "lng": 101.975766,
+            "url": "www.met.gov.my",
+            "logo": "malaysia_logo.png"
+        }, {
+            "mid": "021",
+            "name": "Philippines",
+            "dept": "Philippine Atmospheric, Geophysical and Astronomical Services Administration",
+            "lat": 12.879721,
+            "lng": 121.774017,
+            "url": "www.pagasa.dost.gov.ph",
+            "logo": "phil_logo.png"
+        }, {
+            "mid": "022",
+            "name": "Fiji",
+            "dept": "Fiji Meteorological Service",
+            "lat": -17.713371,
+            "lng": 178.065032,
+            "url": "www.met.gov.fj",
+            "logo": "fiji_logo.png"
+        }, {
+            "mid": "023",
+            "name": "Brunei Darussalam",
+            "dept": "Brunei Darussalam Meteorological Department",
+            "lat": 4.535277,
+            "lng": 114.727669,
+            "url": "www.met.gov.bn",
+            "logo": "brunei_logo.png"
+        }, {
+            "mid": "043",
+            "name": "Indonesia",
+            "dept": "Meteorological and Geophysical Agency",
+            "lat": -0.789275,
+            "lng": 113.921327,
+            "url": "www.bmkg.go.id",
+            "logo": "indonesia_logo.png"
+        }, {
+            "mid": "046",
+            "name": "New Zealand",
+            "dept": "Meteorological Service of New Zealand Ltd. (MetService)",
+            "lat": -40.900557,
+            "lng": 174.885971,
+            "url": "www.metservice.co.nz",
+            "logo": "new_zealand_logo.png"
+        }, {
+            "mid": "077",
+            "name": "Papua New Guinea",
+            "dept": "PNG National Weather Service",
+            "lat": -6.314993,
+            "lng": 143.95555,
+            "url": "www.pngmet.gov.pg",
+            "logo": "png_logo.png"
+        }, {
+            "mid": "081",
+            "name": "Singapore",
+            "dept": "Meteorological Services, National Environment Agency",
+            "lat": 1.352083,
+            "lng": 103.819836,
+            "url": "www.weather.gov.sg",
+            "logo": "singapore_logo.png"
+        }, {
+            "mid": "093",
+            "name": "United States of America",
+            "dept": "National Weather Service",
+            "lat": 37.09024,
+            "lng": -95.712891,
+            "url": "www.nws.noaa.gov\/",
+            "logo": "usa_logo.png"
+        }, {
+            "mid": "139",
+            "name": "Solomon Islands",
+            "dept": "Solomon Islands Meteorological Service",
+            "lat": -9.64571,
+            "lng": 160.156194,
+            "url": "www.met.gov.sb",
+            "logo": "solomon_logo.png"
+        }, {
+            "mid": "140",
+            "name": "New Caledonia",
+            "dept": "",
+            "lat": -20.904305,
+            "lng": 165.618042,
+            "url": "www.meteo.nc",
+            "logo": "bandeau_02.gif"
+        }, {
+            "mid": "148",
+            "name": "Cook Islands",
+            "dept": "Cook Islands Meteorological Service",
+            "lat": -21.236736,
+            "lng": -159.777671,
+            "url": "www.cookislands.pacificweather.org",
+            "logo": ""
+        }, {
+            "mid": "159",
+            "name": "Micronesia, Federated States of",
+            "dept": "",
+            "lat": 21.333619,
+            "lng": -157.909415,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "162",
+            "name": "Niue",
+            "dept": "Niue Meteorological Service",
+            "lat": -19.054445,
+            "lng": -169.867233,
+            "url": "informet.net\/met\/garry_004.htm",
+            "logo": ""
+        }, {
+            "mid": "167",
+            "name": "Tonga",
+            "dept": "Tonga Meteorological Service",
+            "lat": -21.178986,
+            "lng": -175.198242,
+            "url": "www.met.gov.to",
+            "logo": "tonga_logo.jpg"
+        }, {
+            "mid": "169",
+            "name": "Vanuatu",
+            "dept": "Vanuatu Meteorological Service",
+            "lat": -15.376706,
+            "lng": 166.959158,
+            "url": "www.meteo.gov.vu\/",
+            "logo": "vanuatu_logo.png"
+        }, {
+            "mid": "175",
+            "name": "French Polynesia",
+            "dept": "",
+            "lat": -17.679742,
+            "lng": -149.406843,
+            "url": "",
+            "logo": ""
+        }, {
+            "mid": "184",
+            "name": "Samoa",
+            "dept": "Samoa Meteorology Division",
+            "lat": -13.759029,
+            "lng": -172.104629,
+            "url": "www.samet.gov.ws",
+            "logo": ""
+        }, {
+            "mid": "185",
+            "name": "Australia",
+            "dept": "Bureau of Meteorology, Australia",
+            "lat": -25.274398,
+            "lng": 133.775136,
+            "url": "www.bom.gov.au",
+            "logo": "australia_logo.png"
+        }, {
+            "mid": "192",
+            "name": "Kiribati",
+            "dept": "Kiribati Meteorological Service",
+            "lat": 1.866858,
+            "lng": -157.35992,
+            "url": "www.climate.gov.ki",
+            "logo": ""
+        }, {
+            "mid": "202",
+            "name": "Tuvalu",
+            "dept": "Tuvalu Meteorological Service",
+            "lat": -10.728072,
+            "lng": 179.472656,
+            "url": "informet.net\/met\/garry_004.htm",
+            "logo": ""
+        }, {
+            "mid": "204",
+            "name": "Timor-Leste",
+            "dept": "",
+            "lat": -8.874217,
+            "lng": 125.727539,
+            "url": "",
+            "logo": ""
+        }]
+    }, {
+        "ra": 3,
+        "members": [{
+            "mid": "028",
+            "name": "Chile",
+            "dept": "Direccion Meteorologica de Chile",
+            "lat": -35.675147,
+            "lng": -71.542969,
+            "url": "www.meteochile.cl",
+            "logo": "chile_logo.png"
+        }, {
+            "mid": "029",
+            "name": "Peru",
+            "dept": "Peruvian National Weather and Hydrological Service",
+            "lat": -9.189967,
+            "lng": -75.015152,
+            "url": "www.senamhi.gob.pe",
+            "logo": "peru_logo.png"
+        }, {
+            "mid": "050",
+            "name": "Argentina",
+            "dept": "Argentina-Servicio Meteorologico Nacional",
+            "lat": -38.416097,
+            "lng": -63.616672,
+            "url": "www.smn.gov.ar",
+            "logo": "argentina_logo.png"
+        }, {
+            "mid": "054",
+            "name": "Bolivia, Plurinational State of",
+            "dept": "Servicio Nacional de Meteorologia e Hidrologia",
+            "lat": -16.290154,
+            "lng": -63.588653,
+            "url": "www.senamhi.gob.bo",
+            "logo": ""
+        }, {
+            "mid": "057",
+            "name": "Colombia",
+            "dept": "Institute of Hydrology, Meteorology and Environment Studies",
+            "lat": 4.570868,
+            "lng": -74.297333,
+            "url": "www.ideam.gov.co",
+            "logo": "colombia_logo.png"
+        }, {
+            "mid": "065",
+            "name": "Guyana",
+            "dept": "Hydrometeorological Service",
+            "lat": 4.860416,
+            "lng": -58.93018,
+            "url": "www.hydromet.gov.gy",
+            "logo": "GuyanaLogo.png"
+        }, {
+            "mid": "086",
+            "name": "Suriname",
+            "dept": "Meteorological Service",
+            "lat": 3.919305,
+            "lng": -56.027783,
+            "url": "www.meteosur.sr",
+            "logo": "surinamewapen60x50.gif"
+        }, {
+            "mid": "094",
+            "name": "Uruguay",
+            "dept": "Instituto Uruguayo de Meteorologia",
+            "lat": -32.522779,
+            "lng": -55.765835,
+            "url": "www.meteorologia.com.uy",
+            "logo": "uruguay_logo.png"
+        }, {
+            "mid": "135",
+            "name": "Venezuela, Bolivarian Republic of",
+            "dept": "National Institute of Meteorology and Hydrology",
+            "lat": 6.42375,
+            "lng": -66.58973,
+            "url": "www.inameh.gob.ve",
+            "logo": "venezuela_logo.png"
+        }, {
+            "mid": "136",
+            "name": "Brazil",
+            "dept": "Instituto Nacional de Meteorologia",
+            "lat": -14.235004,
+            "lng": -51.92528,
+            "url": "www.inmet.gov.br",
+            "logo": "brazil_logo.png"
+        }, {
+            "mid": "137",
+            "name": "Ecuador",
+            "dept": "INSTITUTO NACIONAL DE METEOROLOGIA E HIDROLOGIA",
+            "lat": -1.831239,
+            "lng": -78.183406,
+            "url": "www.inamhi.gob.ec",
+            "logo": "ecuador_logo.png"
+        }, {
+            "mid": "138",
+            "name": "Paraguay",
+            "dept": "Direccion Nacional de Aeronautica Civil, Direccion de Meteorologia e Hidrologia",
+            "lat": -23.442503,
+            "lng": -58.443832,
+            "url": "www.meteorologia.gov.py",
+            "logo": "paraguay_logo_normal.png"
+        }]
+    }
+]
