@@ -9,4 +9,9 @@ services:
     environment:
       - PORT=${PORT}
     ports:
-      - "${PORT}:${PORT}"
+      - ${PORT}:3000
+
+networks:
+    default:
+      name:  ${AHW_DOCKER_NETWORK}
+      external: true
