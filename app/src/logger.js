@@ -1,6 +1,6 @@
 import config from "config";
 import bunyan from "bunyan";
-const bformat = require("bunyan-format");
+import bformat from "bunyan-format";
 
 const formatOut = bformat({ outputMode: "long" });
 const formatErr = bformat({ outputMode: "long" }, process.stderr);
