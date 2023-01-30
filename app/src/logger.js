@@ -1,13 +1,17 @@
 import config from "config";
 import bunyan from "bunyan";
+const bformat = require("bunyan-format");
+
+const formatOut = bformat({ outputMode: "long" });
+const formatErr = bformat({ outputMode: "long" }, process.stderr);
 
 const streams = [
   {
-    stream: process.stdout,
+    stream: formatOut,
     level: config.get("logger.level") || "debug",
   },
   {
-    stream: process.stderr,
+    stream: formatErr,
     level: "warn",
   },
 ];
