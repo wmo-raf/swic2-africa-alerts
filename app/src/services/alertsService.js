@@ -4,6 +4,7 @@ import GeoJSONPolyline from "geojson-polyline";
 import geojsonhint from "@mapbox/geojsonhint";
 import booleanIntersects from "@turf/boolean-intersects";
 import isEmpty from "lodash/isEmpty.js";
+import slugify from "slugify";
 import isPlainObject from "lodash/isPlainObject.js";
 import * as txml from "txml";
 import turfCircle from "@turf/circle";
@@ -1051,6 +1052,9 @@ const getDetail = (capLink, type) => {
 
           var tmp_polygon = {
             type: "Feature",
+            id: `${alert.identifier}-${
+              areaItem.areaDesc ? slugify(areaItem.areaDesc) : i
+            }`,
             geometry: {
               type: "Polygon",
               coordinates: [tmpCList],
