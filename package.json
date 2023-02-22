@@ -15,6 +15,7 @@
   "dependencies": {
     "@koa/cors": "^3.4.1",
     "@koa/router": "^12.0.0",
+    "@mapbox/geojson-rewind": "^0.5.2",
     "@mapbox/geojsonhint": "^3.1.0",
     "@turf/boolean-intersects": "^6.5.0",
     "@turf/circle": "^6.5.0",

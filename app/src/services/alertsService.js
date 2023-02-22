@@ -7,6 +7,7 @@ import isEmpty from "lodash/isEmpty.js";
 import isPlainObject from "lodash/isPlainObject.js";
 import * as txml from "txml";
 import turfCircle from "@turf/circle";
+import rewind from "@mapbox/geojson-rewind";
 
 import africaGeojson from "./africa.js";
 import alertSources from "./cap-sources.js";
@@ -1012,6 +1013,8 @@ const standardizeCap = (capJson) => {
   }, {});
 };
 
+const polygonToFeature = (coordsStr) => {};
+
 const getDetail = (capLink, type) => {
   const url = `${CAP_DETAIL_URL_BASE}/${capLink}`;
 
@@ -1023,9 +1026,46 @@ const getDetail = (capLink, type) => {
 
     const alert = standardCapJsonData.alert;
 
-    if (type) {
-      var features_json = [];
+    const { area } = (alert && alert.info) || {};
+
+    let featureColl = {
+      type: "FeatureCollection",
+      features: [],
+    };
+
+    if (area && !!area.length) {
+      for (let i = 0; i < area.length; i++) {
+        const areaItem = area[i];
+        if (areaItem.polygon) {
+          const polygon = areaItem.polygon.split(" ");
+          const tmpCList = [];
+          for (let j = 0; j < polygon.length; j++) {
+            let tmpC = polygon[j].split(",");
+
+            const tmp = tmpC[1];
+            tmpC[1] = parseFloat(tmpC[0]);
+            tmpC[0] = parseFloat(tmp);
+
+            tmpCList.push(tmpC);
+          }
+
+          var tmp_polygon = {
+            type: "Feature",
+            geometry: {
+              type: "Polygon",
+              coordinates: [tmpCList],
+            },
+            properties: { areaDesc: areaItem.areaDesc },
+          };
+
+          featureColl.features.push(tmp_polygon);
+        }
+      }
     }
+
+    featureColl = rewind(featureColl, false);
+
+    alert.info.area = featureColl;
 
     // remove unnecessary properties
     // delete alert._attributes;
@@ -1033,7 +1073,7 @@ const getDetail = (capLink, type) => {
     // delete alert.info.circle;
     // delete alert.info.polygon;
 
-    const detail = { capLink: capLink, alert: standardCapJsonData.alert };
+    const detail = { capLink: capLink, alert: alert };
 
     return detail;
   });

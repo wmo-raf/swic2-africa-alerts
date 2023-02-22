@@ -2,8 +2,8 @@ import config from "config";
 import bunyan from "bunyan";
 import bformat from "bunyan-format";
 
-const formatOut = bformat({ outputMode: "long" });
-const formatErr = bformat({ outputMode: "long" }, process.stderr);
+const formatOut = bformat({ outputMode: "short" });
+const formatErr = bformat({ outputMode: "short" }, process.stderr);
 
 const streams = [
   {
