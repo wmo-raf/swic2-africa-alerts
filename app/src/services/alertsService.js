@@ -1041,6 +1041,53 @@ const getPolygonFeature = (aletId, areaItem) => {
   return tmp_polygon;
 };
 
+const getFeatureCollection = (alert) => {
+  const { info: alertInfo } = alert;
+
+  const areas = [];
+
+  if (Array.isArray(alertInfo)) {
+    alertInfo.forEach((info) => {
+      const { area } = info;
+
+      if (Array.isArray(area)) {
+        areas.push(...area);
+      } else {
+        areas.push(area);
+      }
+    });
+  } else {
+    const { area } = alertInfo;
+    if (Array.isArray(area)) {
+      areas.push(...area);
+    } else {
+      areas.push(area);
+    }
+  }
+
+  let featureColl = {
+    type: "FeatureCollection",
+    features: [],
+    id: alert.identifier,
+  };
+
+  if (areas && !!areas.length) {
+    for (let i = 0; i < areas.length; i++) {
+      const areaItem = areas[i];
+
+      if (areaItem.polygon) {
+        const polygonFeature = getPolygonFeature(alert.identifier, areaItem);
+
+        featureColl.features.push(polygonFeature);
+      }
+    }
+  }
+
+  featureColl = rewind(featureColl, false);
+
+  return featureColl;
+};
+
 const getDetail = (capLink, type) => {
   const url = `${CAP_DETAIL_URL_BASE}/${capLink}`;
 
@@ -1052,46 +1099,11 @@ const getDetail = (capLink, type) => {
 
     const alert = standardCapJsonData.alert;
 
-    const { info } = alert;
+    const featureColl = getFeatureCollection(alert);
 
-    let alertInfo = info;
-
-    if (Array.isArray(alertInfo)) {
-      alertInfo = alertInfo[0];
+    if (Array.isArray(alert.info)) {
+      alert.info = alert.info[0];
     }
-
-    alert.info = alertInfo;
-
-    const { area } = alertInfo || {};
-
-    let featureColl = {
-      type: "FeatureCollection",
-      features: [],
-      id: alert.identifier,
-    };
-
-    // if is a list of areas
-    if (Array.isArray(area)) {
-      if (area && !!area.length) {
-        for (let i = 0; i < area.length; i++) {
-          const areaItem = area[i];
-
-          if (areaItem.polygon) {
-            const polygonFeature = getPolygonFeature(
-              alert.identifier,
-              areaItem
-            );
-            featureColl.features.push(polygonFeature);
-          }
-        }
-      }
-    } else {
-      const polygonFeature = getPolygonFeature(alert.identifier, area);
-
-      featureColl.features.push(polygonFeature);
-    }
-
-    featureColl = rewind(featureColl, false);
 
     alert.info.area = featureColl;
 
