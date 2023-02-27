@@ -1056,6 +1056,7 @@ const getDetail = (capLink, type) => {
     let featureColl = {
       type: "FeatureCollection",
       features: [],
+      id: alert.identifier,
     };
 
     // if is a list of areas
