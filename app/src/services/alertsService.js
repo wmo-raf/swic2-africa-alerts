@@ -1014,7 +1014,31 @@ const standardizeCap = (capJson) => {
   }, {});
 };
 
-const polygonToFeature = (coordsStr) => {};
+const getPolygonFeature = (aletId, areaItem) => {
+  const polygon = areaItem.polygon.split(" ");
+  const tmpCList = [];
+  for (let j = 0; j < polygon.length; j++) {
+    let tmpC = polygon[j].split(",");
+
+    const tmp = tmpC[1];
+    tmpC[1] = parseFloat(tmpC[0]);
+    tmpC[0] = parseFloat(tmp);
+
+    tmpCList.push(tmpC);
+  }
+
+  var tmp_polygon = {
+    type: "Feature",
+    id: `${aletId}-${areaItem.areaDesc ? slugify(areaItem.areaDesc) : i}`,
+    geometry: {
+      type: "Polygon",
+      coordinates: [tmpCList],
+    },
+    properties: { areaDesc: areaItem.areaDesc },
+  };
+
+  return tmp_polygon;
+};
 
 const getDetail = (capLink, type) => {
   const url = `${CAP_DETAIL_URL_BASE}/${capLink}`;
@@ -1034,37 +1058,23 @@ const getDetail = (capLink, type) => {
       features: [],
     };
 
-    if (area && !!area.length) {
-      for (let i = 0; i < area.length; i++) {
-        const areaItem = area[i];
-        if (areaItem.polygon) {
-          const polygon = areaItem.polygon.split(" ");
-          const tmpCList = [];
-          for (let j = 0; j < polygon.length; j++) {
-            let tmpC = polygon[j].split(",");
-
-            const tmp = tmpC[1];
-            tmpC[1] = parseFloat(tmpC[0]);
-            tmpC[0] = parseFloat(tmp);
-
-            tmpCList.push(tmpC);
+    // if is a list of areas
+    if (Array.isArray(area)) {
+      if (area && !!area.length) {
+        for (let i = 0; i < area.length; i++) {
+          const areaItem = area[i];
+          if (areaItem.polygon) {
+            const polygonFeature = getPolygonFeature(
+              alert.identifier,
+              areaItem
+            );
+            featureColl.features.push(polygonFeature);
           }
-
-          var tmp_polygon = {
-            type: "Feature",
-            id: `${alert.identifier}-${
-              areaItem.areaDesc ? slugify(areaItem.areaDesc) : i
-            }`,
-            geometry: {
-              type: "Polygon",
-              coordinates: [tmpCList],
-            },
-            properties: { areaDesc: areaItem.areaDesc },
-          };
-
-          featureColl.features.push(tmp_polygon);
         }
       }
+    } else {
+      const polygonFeature = getPolygonFeature(alert.identifier, area);
+      featureColl.features.push(polygonFeature);
     }
 
     featureColl = rewind(featureColl, false);

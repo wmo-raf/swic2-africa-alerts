@@ -43,6 +43,7 @@ class AlertsRouter {
 
     ctx.body = alertDetail;
   }
+
   static async getRandomTestAlerts(ctx) {
     const featureCollection = randomPoint(random(1, 4), {
       bbox: [
