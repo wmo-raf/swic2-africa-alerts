@@ -1016,6 +1016,7 @@ const standardizeCap = (capJson) => {
 
 const getPolygonFeature = (aletId, areaItem) => {
   const polygon = areaItem.polygon.split(" ");
+
   const tmpCList = [];
   for (let j = 0; j < polygon.length; j++) {
     let tmpC = polygon[j].split(",");
@@ -1051,7 +1052,17 @@ const getDetail = (capLink, type) => {
 
     const alert = standardCapJsonData.alert;
 
-    const { area } = (alert && alert.info) || {};
+    const { info } = alert;
+
+    let alertInfo = info;
+
+    if (Array.isArray(alertInfo)) {
+      alertInfo = alertInfo[0];
+    }
+
+    alert.info = alertInfo;
+
+    const { area } = alertInfo || {};
 
     let featureColl = {
       type: "FeatureCollection",
@@ -1064,6 +1075,7 @@ const getDetail = (capLink, type) => {
       if (area && !!area.length) {
         for (let i = 0; i < area.length; i++) {
           const areaItem = area[i];
+
           if (areaItem.polygon) {
             const polygonFeature = getPolygonFeature(
               alert.identifier,
@@ -1075,6 +1087,7 @@ const getDetail = (capLink, type) => {
       }
     } else {
       const polygonFeature = getPolygonFeature(alert.identifier, area);
+
       featureColl.features.push(polygonFeature);
     }
 
