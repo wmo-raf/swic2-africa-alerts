@@ -20,7 +20,7 @@
     "@turf/boolean-intersects": "^6.5.0",
     "@turf/circle": "^6.5.0",
     "@turf/random": "^6.5.0",
-    "axios": "^0.27.2",
+    "axios": "^0.33.0",
     "bunyan": "^1.8.15",
     "bunyan-format": "^0.2.1",
     "config": "^3.3.7",
